@@ -1,24 +1,31 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import './styles/main.css'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Portfolio website loaded!')
+  
+  // Добавляем интерактивность для навигации
+  const navItems = document.querySelectorAll('.navigation li')
+  
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      // Удаляем активный класс у всех элементов
+      navItems.forEach(i => i.classList.remove('active'))
+      // Добавляем активный класс к нажатому элементу
+      item.classList.add('active')
+      
+      // Здесь можно добавить логику для переключения контента
+    })
+  })
+  
+  // Анимация для кнопки "Hire Me"
+  const hireButton = document.querySelector('.hire-button')
+  
+  hireButton.addEventListener('mouseenter', () => {
+    hireButton.style.transform = 'scale(1.05)'
+    hireButton.style.transition = 'transform 0.3s ease'
+  })
+  
+  hireButton.addEventListener('mouseleave', () => {
+    hireButton.style.transform = 'scale(1)'
+  })
+})

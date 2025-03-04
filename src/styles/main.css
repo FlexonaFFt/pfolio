@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #000000;
+    --accent-color: #ffcc00;
+    --text-color: #ffffff;
+    --background-color: #121212;
+    --card-color: #1e1e1e;
+    --highlight-color: #ff4d4d;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    overflow: hidden;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    height: 100vh;
+    width: 100vw;
+    padding: 15px;
+  }
+  
+  /* Стили для секций */
+  .logo-section, .headline-section, .image-section, .navigation, .project-card {
+    background-color: var(--card-color);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Логотип и рейтинг */
+  .logo-section {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .rating span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .badge {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  /* Заголовок */
+  .headline-section {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .headline-section h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .highlight {
+    color: var(--highlight-color);
+  }
+  
+  /* Изображение */
+  .image-section {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    background-color: #ff9a9a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://via.placeholder.com/300');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Навигация */
+  .navigation {
+    grid-column: 4;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    margin-top: 30px;
+  }
+  
+  .navigation li {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .navigation li.active {
+    color: var(--accent-color);
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .hire-button {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto;
+  }
+  
+  /* Проекты */
+  .projects-section {
+    grid-column: 1 / 5;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .project-card {
+    background-color: var(--card-color);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .project-card:nth-child(1) {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+  }
+  
+  .project-card:nth-child(2) {
+    background-color: #2a9d8f;
+  }
+  
+  .project-title {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .more-cases {
+    font-weight: bold;
+    align-self: center;
+    margin: auto;
+  }
+  
+  .qr-code {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+  }
+  
+  .qr-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
