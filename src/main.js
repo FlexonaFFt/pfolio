@@ -1,8 +1,4 @@
 import './styles/main.css';
-import './styles/preloader.css';
-import Preloader from './scripts/preloader';
-
-new Preloader();
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Portfolio website loaded!')

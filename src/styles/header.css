@@ -60,10 +60,6 @@
   .minimal-header {
     opacity: 0;
     animation: fadeInDown 0.8s ease forwards;
-    animation-play-state: paused;
-  }
-  
-  .content-loaded .minimal-header {
     animation-play-state: running;
   }
   
