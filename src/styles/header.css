@@ -1,103 +1,106 @@
 /* Minimal Header Styles */
 .minimal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px; 
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    background: transparent !important;
-    transition: color 0.1s ease; 
-  }
-  
-  .header-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .star-icon {
-    font-size: 36px;
-    padding: 0;
-    color: #fff;
-  }
-  
-  .header-text {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-  }
-  
-  .header-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .menu-button, .search-button {
-    background: transparent;
-    border: none;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    padding: 5px;
-    transition: opacity 0.2s ease;
-  }
-  
-  .menu-button:hover, .search-button:hover {
-    opacity: 0.8;
-  }
-  
-  .search-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Animation for the header */
-  .minimal-header {
-    opacity: 0;
-    animation: fadeInDown 0.8s ease forwards;
-    animation-play-state: running;
-  }
-  
-  /* Light theme adjustments */
-  body.light-theme .minimal-header {
-    color: #333;
-    background: transparent !important; /* Force transparent background in light mode too */
-  }
-  
-  body.light-theme .menu-button, 
-  body.light-theme .search-button,
-  body.light-theme .star-icon,
-  body.light-theme .header-text {
-    color: #333;
-  }
-.unified-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px; 
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  background: transparent !important;
+  transition: color 0.1s ease;
+  position: relative;
+  /* Remove the direct border */
+  border-bottom: none;
+}
+
+/* Add a pseudo-element for the border with proper padding */
+.minimal-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  right: 30px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-left, .header-center, .header-right {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+}
+
+/* Fix the typo in the class name */
+.header-text {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.header-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  opacity: 0.9;
+}
+
+.header-title {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.collaborate-text {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
   cursor: pointer;
-  padding: 5px 10px;
   transition: opacity 0.2s ease;
 }
 
-.unified-button:hover {
+.collaborate-text:hover {
   opacity: 0.8;
 }
 
-.menu-text {
-  margin-right: 5px;
+/* Animation for the header */
+.minimal-header {
+  opacity: 0;
+  animation: fadeInDown 0.8s ease forwards;
+  animation-play-state: running;
 }
 
-body.light-theme .unified-button {
+/* Light theme adjustments */
+body.light-theme .minimal-header {
   color: #333;
+  background: transparent !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .header-text,
+body.light-theme .header-subtitle,
+body.light-theme .header-title,
+body.light-theme .collaborate-text {
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .minimal-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .header-center {
+    display: none;
+  }
+  
+  .header-right {
+    align-self: flex-end;
+  }
+}
+
+/* Update light theme border as well */
+body.light-theme .minimal-header::after {
+  background-color: rgba(0, 0, 0, 0.1);
 }
