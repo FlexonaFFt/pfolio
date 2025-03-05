@@ -17,12 +17,13 @@ body {
 
 /* Стили для хедера */
 header {
-  padding: 20px 40px;
+  padding: 20px 30px;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .social-links {
