@@ -35,6 +35,10 @@
       // Удаляем прелоадер после анимации
       setTimeout(() => {
         this.preloader.remove();
+        setTimeout(() => {
+          document.body.classList.add('content-loaded');
+        }, 300); // 300ms delay after preloader is removed
+        
       }, 500);
     }
   }
