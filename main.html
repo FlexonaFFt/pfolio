@@ -1,87 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/main.css">
-    <link rel="stylesheet" href="src/styles/popup.css">
-    <link rel="stylesheet" href="src/styles/preloader.css">
-    <title>Developer Portfolio</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="main-section">
-        <div class="header">
-          <div class="logo">S</div>
-          <div class="rating">
-            <span>4.98</span>
-            <div class="badge">TOP DEVELOPER</div>
-          </div>
-        </div>
-        
-        <div class="content">
-          <h1>Duh!</h1>
-          <div class="subtitle">
-            <p>Full-stack developer with passion for <span class="highlight">clean code</span> and innovative solutions!</p>
-          </div>
-        </div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Builder</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/preloader.css">
+    <link rel="stylesheet" href="/src/styles/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!--<div class="header-container">
+            <div class="social-links">
+                <a href="#">X (TWITTER)</a> 
+                <a href="#">TELEGRAM</a>
+            </div>
+        </div>-->
+    </header>
 
-      <div class="popup-overlay">
-        <div class="popup-container">
-          <div class="popup-header">
-            <h2>More About Me</h2>
-            <div class="close-button">×</div>
-          </div>
-          <div class="popup-content">
-            <p>I'm a passionate full-stack developer with expertise in modern web technologies. My approach combines clean code practices with innovative solutions to create exceptional digital experiences.</p>
-            <p>With a strong foundation in both front-end and back-end development, I can bring your ideas to life with attention to detail and performance optimization.</p>
-            <h3>Skills</h3>
-            <ul>
-              <li>JavaScript/TypeScript</li>
-              <li>React & Vue.js</li>
-              <li>Node.js</li>
-              <li>Python</li>
-              <li>UI/UX Design</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <main>
+        <section class="hero">
+            <div class="content-wrapper">
+                <h1>We build end-to-end</h1>
+                <h2>landing pages to yield</h2>
+                <h2>more conversions for you</h2>
+                
+                <p class="subtitle">
+                    Research, branding, copywriting, messaging,<br>
+                    design, and development - everything<br>
+                    within 4 weeks
+                </p>
 
-      <div class="image-section">
-        <div class="image-container">
-          <img src="peeps-avatar.png" alt="3D Avatar" class="avatar-image">
-        </div>
-      </div>
+                <button class="book-call-btn">Book a Call</button>
+            </div>
+            
+            <!-- Добавляем скрытую форму -->
+            <div class="input-form-wrapper hidden">
+                <h2>Enter your prompt</h2>
+                <textarea class="ml-input" placeholder="Describe what you need..."></textarea>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button class="footer-btn theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </footer>
 
-      <!-- Правая навигация -->
-      <div class="navigation">
-        <ul>
-          <li class="active"><span class="dot"></span>ABOUT</li>
-          <li>SOLUTIONS</li>
-          <li>PORTFOLIO</li>
-          <li>BLOG</li>
-        </ul>
-        <div class="hire-button">HIRE US</div>
-      </div>
-      
-      <!-- Желтая секция с недавними коллаборациями -->
-      <div class="yellow-section">
-        <div class="recent-title">RECENT</div>
-        <div class="collaborations">COLLABORATIONS</div>
-        <div class="more-cases-text" style="margin-top: auto;">MORE CASES</div>
-      </div>
-      
-      <!-- Секция с QR-кодом -->
-      <div class="qr-section">
-        <div class="qr-code">
-          <!-- QR код -->
-        </div>
-        <div class="qr-text">FIND SECRET BONUS!</div>
-      </div>
-    </div>
-    <script src="src/scripts/popup.js"></script>
-    <script src="src/scripts/preloader.js"></script>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <script src="/src/scripts/theme.js"></script>
+    <script src="/src/scripts/preloader.js"></script>
+</body>
 </html>

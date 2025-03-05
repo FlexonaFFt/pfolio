@@ -1,14 +1,11 @@
 import './styles/main.css';
 import './styles/preloader.css';
 import Preloader from './scripts/preloader';
-import Popup from './scripts/popup';
 
 new Preloader();
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Portfolio website loaded!')
-
-  new Popup();
   
   // Добавляем интерактивность для навигации
   const navItems = document.querySelectorAll('.navigation li')
