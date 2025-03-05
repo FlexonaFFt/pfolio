@@ -1,4 +1,5 @@
-export default class Preloader {
+(function() {
+  class Preloader {
     constructor() {
       this.createPreloader();
       this.init();
@@ -31,5 +32,15 @@ export default class Preloader {
   
     hide() {
       this.preloader.classList.add('hidden');
+      // Удаляем прелоадер после анимации
+      setTimeout(() => {
+        this.preloader.remove();
+      }, 500);
     }
   }
+
+  // Создаем экземпляр прелоадера при загрузке DOM
+  document.addEventListener('DOMContentLoaded', () => {
+    new Preloader();
+  });
+})();

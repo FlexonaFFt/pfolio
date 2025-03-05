@@ -1,7 +1,7 @@
 import './styles/main.css';
 import './styles/preloader.css';
 import Preloader from './scripts/preloader';
-import Popup  from './scripts/popup';
+import Popup from './scripts/popup';
 
 new Preloader();
 

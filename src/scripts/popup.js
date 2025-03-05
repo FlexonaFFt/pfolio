@@ -1,65 +1,40 @@
-export default class Popup {
-    constructor() {
-      this.init();
-    }
-  
-    init() {
-      // Ждем полной загрузки DOM
-      document.addEventListener('DOMContentLoaded', () => {
-        // Получаем элементы
-        const arrowButton = document.querySelector('.arrow-button');
-        const popupOverlay = document.querySelector('.popup-overlay');
-        const closeButton = document.querySelector('.close-button');
-        const mainSection = document.querySelector('.main-section');
-  
-        if (!arrowButton || !popupOverlay || !closeButton) {
-          console.error('Popup elements not found');
-          return;
-        }
-  
-        // Открытие попапа при клике на стрелочку
-        arrowButton.addEventListener('click', (e) => {
-          e.stopPropagation();
-          this.openPopup(popupOverlay);
-        });
-  
-        // Открытие попапа при клике на main-section
-        mainSection.addEventListener('click', () => {
-          this.openPopup(popupOverlay);
-        });
-  
-        // Закрытие попапа при клике на кнопку закрытия
-        closeButton.addEventListener('click', () => {
-          this.closePopup(popupOverlay);
-        });
-  
-        // Закрытие попапа при клике вне контейнера
-        popupOverlay.addEventListener('click', (e) => {
-          if (e.target === popupOverlay) {
-            this.closePopup(popupOverlay);
-          }
-        });
-  
-        // Закрытие попапа при нажатии Escape
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape' && popupOverlay.classList.contains('active')) {
-            this.closePopup(popupOverlay);
-          }
-        });
-  
-        console.log('Popup initialized');
-      });
-    }
-  
-    openPopup(popupOverlay) {
-      console.log('Opening popup');
+document.addEventListener('DOMContentLoaded', function() {
+    // Получаем элементы
+    const mainSection = document.querySelector('.main-section');
+    const popupOverlay = document.querySelector('.popup-overlay');
+    const closeButton = document.querySelector('.close-button');
+    
+    // Открытие попапа при клике на main-section
+    mainSection.addEventListener('click', function() {
+      console.log('Main section clicked');
       popupOverlay.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Предотвращаем прокрутку страницы
-    }
-  
-    closePopup(popupOverlay) {
-      console.log('Closing popup');
+      document.body.style.overflow = 'hidden';
+    });
+    
+    // Закрытие попапа при клике на кнопку закрытия
+    closeButton.addEventListener('click', function() {
+      console.log('Close button clicked');
       popupOverlay.classList.remove('active');
-      document.body.style.overflow = ''; // Возвращаем прокрутку страницы
-    }
-  }
+      document.body.style.overflow = '';
+    });
+    
+    // Закрытие попапа при клике вне контейнера
+    popupOverlay.addEventListener('click', function(e) {
+      if (e.target === popupOverlay) {
+        console.log('Overlay clicked');
+        popupOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Закрытие попапа при нажатии Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && popupOverlay.classList.contains('active')) {
+        console.log('Escape pressed');
+        popupOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    console.log('Popup script initialized');
+  });
