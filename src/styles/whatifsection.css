@@ -1,0 +1,92 @@
+/* What If Section */
+.what-if-section {
+    padding: 120px 30px;
+    background-color: var(--dark-bg);
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.what-if-title {
+    font-family: var(--font-serif);
+    font-size: 3.8vw;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    text-transform: none;
+    margin-bottom: 100px;
+    max-width: 800px;
+}
+
+.what-if-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 100px;
+    margin-bottom: 80px;
+}
+
+.what-if-header {
+    grid-column: 1 / 2;
+}
+
+.what-if-header h3 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+
+.what-if-item {
+    position: relative;
+}
+
+.what-if-line {
+    height: 1px;
+    background-color: var(--border-color);
+    margin-bottom: 20px;
+}
+
+.what-if-item p {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 90%;
+}
+
+.what-if-footer {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-top: 60px;
+}
+
+/* Light theme adjustments */
+body.light-theme .what-if-line {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .what-if-title {
+        font-size: 5vw;
+    }
+    
+    .what-if-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .what-if-title {
+        font-size: 7vw;
+    }
+    
+    .what-if-item p {
+        font-size: 18px;
+    }
+    
+    .what-if-footer {
+        font-size: 18px;
+    }
+}
