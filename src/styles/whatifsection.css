@@ -1,7 +1,6 @@
 /* What If Section */
 .what-if-section {
     padding: 120px 30px;
-    background-color: var(--dark-bg);
     position: relative;
     max-width: 1600px;
     margin: 0 auto;
@@ -23,6 +22,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 60px 100px;
     margin-bottom: 80px;
+    position: relative;
 }
 
 .what-if-header {
@@ -35,34 +35,43 @@
     letter-spacing: 1px;
     opacity: 0.7;
     margin-bottom: 0;
-}
-
-.what-if-item {
-    position: relative;
-}
-
-.what-if-line {
-    height: 1px;
-    background-color: var(--border-color);
-    margin-bottom: 20px;
+    color: var(--light-text); 
 }
 
 .what-if-item p {
     font-size: 20px;
     line-height: 1.5;
     max-width: 90%;
+    color: var(--light-text); 
+    margin-bottom: 30px; 
 }
 
-.what-if-footer {
-    font-size: 22px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin-top: 60px;
+.what-if-footer p {
+    color: var(--light-text); 
 }
 
-/* Light theme adjustments */
+body.light-theme .what-if-section {
+    background-color: transparent; 
+}
+
 body.light-theme .what-if-line {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .what-if-title {
+    color: var(--dark-text);
+}
+
+body.light-theme .what-if-header h3 {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+body.light-theme .what-if-item p {
+    color: var(--dark-text);
+}
+
+body.light-theme .what-if-footer p {
+    color: var(--dark-text);
 }
 
 /* Responsive adjustments */
