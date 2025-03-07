@@ -20,13 +20,13 @@
 .what-if-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px 100px;
+    gap: 80px 100px;
     margin-bottom: 80px;
-    position: relative;
 }
 
 .what-if-header {
     grid-column: 1 / 2;
+    margin-bottom: 20px;
 }
 
 .what-if-header h3 {
@@ -35,26 +35,67 @@
     letter-spacing: 1px;
     opacity: 0.7;
     margin-bottom: 0;
-    color: var(--light-text); 
+    color: var(--light-text);
+    text-transform: uppercase;
+}
+
+.what-if-item {
+    position: relative;
+    padding-bottom: 25px; 
+}
+
+.what-if-line {
+    display: none;
 }
 
 .what-if-item p {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.5;
-    max-width: 90%;
-    color: var(--light-text); 
-    margin-bottom: 30px; 
+    max-width: 95%;
+    color: var(--light-text);
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.what-if-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+.what-if-footer {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-top: 60px;
 }
 
 .what-if-footer p {
-    color: var(--light-text); 
+    color: var(--light-text);
+    font-weight: 300;
+}
+
+.what-if-item {
+    transition: transform 0.3s ease;
+}
+
+.what-if-item:hover {
+    transform: translateX(5px);
+}
+
+.what-if-item:hover p {
+    opacity: 0.9;
 }
 
 body.light-theme .what-if-section {
-    background-color: transparent; 
+    background-color: transparent;
 }
 
-body.light-theme .what-if-line {
+body.light-theme .what-if-item::after {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -83,6 +124,10 @@ body.light-theme .what-if-footer p {
     .what-if-grid {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+    
+    .what-if-item p {
+        font-size: 20px;
     }
 }
 
