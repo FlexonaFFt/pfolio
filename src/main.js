@@ -1,31 +1,22 @@
-import './styles/main.css';
-
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Portfolio website loaded!')
-  
-  // Добавляем интерактивность для навигации
   const navItems = document.querySelectorAll('.navigation li')
+  const skillsBtn = document.getElementById('skillsExpandBtn')
+  const skillsDetails = document.getElementById('skillsDetails')
   
   navItems.forEach(item => {
     item.addEventListener('click', () => {
-      // Удаляем активный класс у всех элементов
       navItems.forEach(i => i.classList.remove('active'))
-      // Добавляем активный класс к нажатому элементу
       item.classList.add('active')
-      
-      // Здесь можно добавить логику для переключения контента
     })
   })
   
-  // Анимация для кнопки "Hire Me"
-  const hireButton = document.querySelector('.hire-button')
-  
-  hireButton.addEventListener('mouseenter', () => {
-    hireButton.style.transform = 'scale(1.05)'
-    hireButton.style.transition = 'transform 0.3s ease'
-  })
-  
-  hireButton.addEventListener('mouseleave', () => {
-    hireButton.style.transform = 'scale(1)'
-  })
+  if (skillsBtn && skillsDetails) {
+    skillsBtn.addEventListener('click', () => {
+      skillsBtn.classList.toggle('active')
+      skillsDetails.classList.toggle('active')
+    })
+  } else {
+    console.log('Elements not found:', { skillsBtn, skillsDetails })
+  }
 })

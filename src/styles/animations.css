@@ -1,4 +1,4 @@
-/* Анимации для элементов страницы */
+/* Base animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -10,117 +10,232 @@
     }
 }
 
-@keyframes typeText {
-    from {
-        clip-path: inset(0 100% 0 0);
-    }
-    to {
-        clip-path: inset(0 0 0 0);
-    }
-}
-
-@keyframes fadeOutUp {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-}
-
-@keyframes fadeInDown {
+@keyframes fadeInScale {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: scale(0.95);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: scale(1);
     }
 }
 
-@keyframes fadeInForm {
+@keyframes borderFadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        width: 0;
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        width: 100%;
     }
 }
 
-/* Анимации для основного контента */
+/* Header animations */
+.minimal-header {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.1s;
+}
+
+.header-left {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.header-center {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.header-right {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.4s;
+}
+
+/* Initial page load animations */
 .content-wrapper {
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards;
-    animation-play-state: running;
 }
 
-.content-wrapper.fade-out {
-    animation: fadeOutUp 0.8s ease forwards !important;
-    animation-play-state: running !important;
-}
-
-.input-form-wrapper {
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-.input-form-wrapper.visible {
-    animation: fadeInForm 0.8s ease forwards;
-    animation-play-state: running !important;
-}
-
-/* Анимации для элементов контента */
 h1 {
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards;
     animation-delay: 0.3s;
-    animation-play-state: running;
 }
 
-h2:nth-of-type(1) {
-    opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
-    animation-delay: 0.4s;
-    animation-play-state: running;
-}
-
-h2:nth-of-type(2) {
-    opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
-    animation-delay: 0.5s;
-    animation-play-state: running;
-}
-
-.subtitle {
-    opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
-    animation-delay: 0.6s;
-    animation-play-state: running;
-}
-
-.book-call-btn {
-    opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
-    animation-delay: 0.8s;
-    animation-play-state: running;
-}
-
-/* Анимации для кнопок в футере */
 .footer-btn {
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards;
-    animation-play-state: running;
-}
-
-.menu-toggle {
-    animation-delay: 0.9s;
 }
 
 .theme-toggle {
-    animation-delay: 1.0s;
+    animation-delay: 0.3s;
+}
+
+/* Scroll animations using CSS transitions */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), 
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), 
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* When elements become visible */
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-scale.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Transition delays for "What if" section */
+.what-if-title.reveal-scale {
+    transition-delay: 0.1s;
+}
+
+.what-if-header.reveal {
+    transition-delay: 0.2s;
+}
+
+.what-if-item:nth-child(1).reveal {
+    transition-delay: 0.3s;
+}
+
+.what-if-item:nth-child(2).reveal {
+    transition-delay: 0.4s;
+}
+
+.what-if-item:nth-child(3).reveal {
+    transition-delay: 0.5s;
+}
+
+.what-if-item:nth-child(4).reveal {
+    transition-delay: 0.6s;
+}
+
+.what-if-footer.reveal-scale {
+    transition-delay: 0.7s;
+}
+
+/* Border animation for what-if items */
+.what-if-item.reveal.visible::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease-out, width 0.6s ease-out;
+    transition-delay: 0.4s;
+}
+
+.what-if-item.reveal.visible::after {
+    opacity: 1;
+    width: 100%;
+}
+
+/* Awards section transitions */
+.awards-header.reveal-scale {
+    transition-delay: 0.1s;
+}
+
+.awards-content.reveal {
+    transition-delay: 0.2s;
+}
+
+.award-item.reveal {
+    transition-delay: 0.3s;
+}
+
+.award-item:nth-child(2).reveal {
+    transition-delay: 0.35s;
+}
+
+.award-item:nth-child(3).reveal {
+    transition-delay: 0.4s;
+}
+
+.award-item:nth-child(4).reveal {
+    transition-delay: 0.45s;
+}
+
+.award-item:nth-child(5).reveal {
+    transition-delay: 0.5s;
+}
+
+.award-item:nth-child(6).reveal {
+    transition-delay: 0.55s;
+}
+
+.award-item:nth-child(7).reveal {
+    transition-delay: 0.6s;
+}
+
+/* Contact section transitions */
+.contact-section h2.reveal-scale {
+    transition-delay: 0.1s;
+}
+
+.contact-section h2:nth-child(2).reveal-scale {
+    transition-delay: 0.15s;
+}
+
+.contact-section h2:nth-child(3).reveal-scale {
+    transition-delay: 0.2s;
+}
+
+.contact-section h2:nth-child(4).reveal-scale {
+    transition-delay: 0.25s;
+}
+
+.contact-column.reveal {
+    transition-delay: 0.3s;
+}
+
+.stack-column.reveal {
+    transition-delay: 0.4s;
+}
+
+/* Skills section transitions */
+.skills-expand-btn.reveal-scale {
+    transition-delay: 0.2s;
+}
+
+/* Hero section animations */
+.hero .text-left h1:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.hero .text-left h1:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.hero .text-left h1:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.hero .text-right h1:nth-child(1) {
+    animation-delay: 0.7s;
+}
+
+.hero .text-right h1:nth-child(2) {
+    animation-delay: 0.8s;
 }
