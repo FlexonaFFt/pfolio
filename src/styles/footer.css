@@ -6,6 +6,11 @@ footer {
     padding: 20px 30px;
     display: flex;
     z-index: 10;
+    pointer-events: none;
+}
+
+.minimal-footer {
+    pointer-events: none;
 }
 
 .footer-btn {
@@ -20,7 +25,8 @@ footer {
     justify-content: center;
     cursor: pointer;
     font-size: 12px;
-    padding: 0;
+    padding: 0; 
+    pointer-events: auto;
 }
 
 .footer-btn:hover {
@@ -33,4 +39,45 @@ footer {
 
 .theme-toggle {
     margin-left: auto;
+}
+
+/* Стили для нового футера с ссылками */
+.links-footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 60px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+body.light-theme .footer-link {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body.light-theme .footer-link:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+body.light-theme .links-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }

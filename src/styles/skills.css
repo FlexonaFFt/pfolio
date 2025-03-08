@@ -1,11 +1,9 @@
-/* Секция с кнопкой "Подробнее о навыках" */
 .skills-expand-section {
     padding: 30px;
     margin: 20px 0;
     position: relative;
 }
 
-/* Стили для кнопки */
 .skills-expand-btn {
     width: 100%;
     padding: 30px;
