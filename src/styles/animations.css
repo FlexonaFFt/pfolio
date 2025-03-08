@@ -124,3 +124,179 @@ h2:nth-of-type(2) {
 .theme-toggle {
     animation-delay: 1.0s;
 }
+
+/* Анимации при скроллинге */
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animation.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Анимации для секции "Что если" */
+.what-if-title.scroll-animation {
+    transition-delay: 0.1s;
+}
+
+.what-if-header.scroll-animation {
+    transition-delay: 0.2s;
+}
+
+.what-if-item.scroll-animation {
+    transition-delay: 0.3s;
+}
+
+.what-if-item:nth-child(3).scroll-animation {
+    transition-delay: 0.4s;
+}
+
+.what-if-item:nth-child(4).scroll-animation {
+    transition-delay: 0.5s;
+}
+
+.what-if-item:nth-child(5).scroll-animation {
+    transition-delay: 0.6s;
+}
+
+.what-if-footer.scroll-animation {
+    transition-delay: 0.7s;
+}
+
+/* Анимации для других секций */
+.awards-header.scroll-animation {
+    transition-delay: 0.1s;
+}
+
+.awards-content.scroll-animation {
+    transition-delay: 0.2s;
+}
+
+.award-item.scroll-animation {
+    transition-delay: 0.3s;
+}
+
+.contact-section h2.scroll-animation {
+    transition-delay: 0.1s;
+}
+
+.contact-column.scroll-animation {
+    transition-delay: 0.3s;
+}
+
+.stack-column.scroll-animation {
+    transition-delay: 0.4s;
+}
+
+.skills-expand-btn.scroll-animation {
+    transition-delay: 0.2s;
+}
+
+/* Анимации для секции "Что если" */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes borderFadeIn {
+    from {
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+/* Стили для анимаций при скроллинге */
+.scroll-animation {
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.scroll-animation.animate {
+    animation-fill-mode: forwards;
+}
+
+/* Специальные анимации для секции "Что если" */
+.what-if-title.scroll-animation.animate {
+    animation: fadeInScale 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.what-if-header.scroll-animation.animate {
+    animation: fadeInSlideUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.what-if-item.scroll-animation.animate {
+    animation: fadeInSlideUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    position: relative;
+}
+
+.what-if-item.scroll-animation.animate::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: borderFadeIn 0.6s ease-out 0.4s forwards;
+    opacity: 0;
+}
+
+.what-if-footer.scroll-animation.animate {
+    animation: fadeInScale 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Задержки для элементов */
+.what-if-item:nth-child(3).scroll-animation {
+    animation-delay: 0.1s;
+}
+
+.what-if-item:nth-child(4).scroll-animation {
+    animation-delay: 0.2s;
+}
+
+.what-if-item:nth-child(5).scroll-animation {
+    animation-delay: 0.3s;
+}
+
+/* Остальные анимации для других секций */
+.awards-header.scroll-animation.animate,
+.contact-section h2.scroll-animation.animate {
+    animation: fadeInScale 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.awards-content.scroll-animation.animate,
+.contact-column.scroll-animation.animate,
+.stack-column.scroll-animation.animate {
+    animation: fadeInSlideUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.award-item.scroll-animation.animate {
+    animation: fadeInSlideUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.skills-expand-btn.scroll-animation.animate {
+    animation: fadeInScale 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
