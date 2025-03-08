@@ -20,13 +20,13 @@ function setTheme(isDark) {
 
 // Устанавливаем начальную тему на основе системных настроек
 document.addEventListener('DOMContentLoaded', function() {
-    // Используем системную тему по умолчанию
-    setTheme(prefersDarkScheme.matches);
+    // Всегда используем темную тему по умолчанию
+    setTheme(true);
     
-    // Слушаем изменения системной темы
-    prefersDarkScheme.addEventListener('change', (e) => {
-        setTheme(e.matches);
-    });
+    // Слушаем изменения системной темы, но не применяем их автоматически
+    // prefersDarkScheme.addEventListener('change', (e) => {
+    //     setTheme(e.matches);
+    // });
     
     // Обработчик клика по кнопке
     const themeToggle = document.querySelector('.theme-toggle');
