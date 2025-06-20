@@ -3,14 +3,14 @@ import { createRoot } from 'react-dom/client';
 import './main.css';
 
 
-import SplineScene from './components/SplineScene.jsx';
+import IntroScene from './components/IntroScene.jsx';
 import InfoSection from './components/InfoSection.jsx';
 
 
 const Portfolio = () => {
   return (
     <div className='portfolio'>
-      <SplineScene />
+      <IntroScene />
       <InfoSection />
     </div>
   );
