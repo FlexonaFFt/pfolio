@@ -1,4 +1,5 @@
-import Dither from "./IntroBackground";
+/* import Dither from "./IntroBackground"; */
+import Beams from "./IntroBackground";
 import '../assets/IntroScene.css';
 import baseballHat from '../assets/images/baseball-hat.png';
 import redHat from '../assets/images/red-hat.png';
@@ -13,6 +14,20 @@ export default function IntroScene() {
         <img src={baseballHat} alt="baseball" className="baseball-hat" />
       </div>
       <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+        <Beams
+          beamWidth={2}
+          beamHeight={15}
+          beamNumber={12}
+          lightColor="#ffffff"
+          speed={2}
+          noiseIntensity={1.75}
+          scale={0.2}
+          rotation={30}
+        />
+      </div>
+
+      {/*
+      <div style={{ width: '100%', height: '100%', position: 'relative' }}>
         <Dither
           waveColor={[0.5, 0.5, 0.5]}
           disableAnimation={false}
@@ -23,7 +38,7 @@ export default function IntroScene() {
           waveFrequency={3}
           waveSpeed={0.05}
         />
-      </div>
-    </div>
+      </div> */}
+    </div> 
   );
 }

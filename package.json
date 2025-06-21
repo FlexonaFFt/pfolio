@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.6",
+    "@react-three/drei": "^10.3.0",
     "@react-three/fiber": "^9.1.2",
     "@react-three/postprocessing": "^3.0.4",
     "@splinetool/react-spline": "^4.0.0",
