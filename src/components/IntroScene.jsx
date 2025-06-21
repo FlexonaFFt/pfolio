@@ -1,15 +1,29 @@
-import Spline from "@splinetool/react-spline";
+import Dither from "./IntroBackground";
 import '../assets/IntroScene.css';
+import baseballHat from '../assets/images/baseball-hat.png';
+import redHat from '../assets/images/red-hat.png';
 
-export default function SplineScene() {
+export default function IntroScene() {
   return (
     <div className="intro-scene">
       <div className="hero-content">
-        <p className="subtitle">Frontend Developer</p>
-        <h1 className="title">Создаю современные веб-решения</h1>
-        <div className="scroll-indicator">↓</div>
+        <p className="subtitle">We are good at creating</p>
+        <h1 className="title">"Communication<br/>through quality visuals."</h1>
+        <img src={redHat} alt="red hat" className="red-hat" />
+        <img src={baseballHat} alt="baseball" className="baseball-hat" />
       </div>
-      <Spline scene="https://prod.spline.design/keVyr60pLS0gHOpf/scene.splinecode" />
+      <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+        <Dither
+          waveColor={[0.5, 0.5, 0.5]}
+          disableAnimation={false}
+          enableMouseInteraction={true}
+          mouseRadius={0.3}
+          colorNum={4}
+          waveAmplitude={0.3}
+          waveFrequency={3}
+          waveSpeed={0.05}
+        />
+      </div>
     </div>
   );
 }
