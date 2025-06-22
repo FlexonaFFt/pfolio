@@ -9,16 +9,67 @@
 
 .hero-content {
     position: absolute;
-    pointer-events: none;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 1;
-    text-align: center;
     width: 100%;
     max-width: 1200px;
-    padding: 0 20px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 0px;
+    gap: 48px;
+
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
+
+.text-content {
+    font-family: 'Manrope', sans-serif;
+    position: static;
+    align-self: stretch;
+    flex: none;
+
+    order: 0;
+    gap: 28px;
+    flex-grow: 0;
+    margin: 48px 0px;
+}
+
+.top-text {
+    gap: 8px;
+    margin: 28px 0px;
+}
+
+.top-text p.top-text-bottom-text {
+    font-size: 55px;
+    font-weight: 450;
+    line-height: 60px;
+    letter-spacing: -1%;
+}
+
+.top-text p.my-name {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: -1.8%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .subtitle {
     letter-spacing: 3px;
