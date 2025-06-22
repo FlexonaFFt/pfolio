@@ -1,17 +1,21 @@
 /* import Dither from "./IntroBackground"; */
 import Beams from "./IntroBackground";
 import '../assets/IntroScene.css';
-import baseballHat from '../assets/images/baseball-hat.png';
-import redHat from '../assets/images/red-hat.png';
 
 export default function IntroScene() {
   return (
     <div className="intro-scene">
       <div className="hero-content">
-        <p className="subtitle">We are good at creating</p>
-        <h1 className="title">"Communication<br/>through quality visuals."</h1>
-        <img src={redHat} alt="red hat" className="red-hat" />
-        <img src={baseballHat} alt="baseball" className="baseball-hat" />
+        <div className="text-content">
+          <div className="top-text">
+            <p className="my-name">Igor Zharov</p>
+            <p className="top-text-bottom-text">Find Inspiration.<br/>Create, Generate, <br />Produce & Automate.</p>
+          </div>
+          <p className="bottom-text">Welcome to PromptVerse. Effortlessly create content, explore endless prompts, 
+            and stay ahead with real-time trends. Automate emails, social media, and more 
+            while our AI extracts knowledge from any document or URL. Experience a stunning, 
+            futuristic design that boosts productivity.</p>
+        </div>
       </div>
       <div style={{ width: '100%', height: '100%', position: 'relative' }}>
         <Beams

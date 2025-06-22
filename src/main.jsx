@@ -4,14 +4,13 @@ import './main.css';
 
 
 import IntroScene from './components/IntroScene.jsx';
-import InfoSection from './components/InfoSection.jsx';
+import InfoSection from './components/InfoSection.jsx'; /* нужно потом будет её включить */ 
 
 
 const Portfolio = () => {
   return (
     <div className='portfolio'>
       <IntroScene />
-      <InfoSection />
     </div>
   );
 }
