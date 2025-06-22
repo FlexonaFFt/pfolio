@@ -1,9 +1,6 @@
 /* import Dither from "./IntroBackground"; */
 import Beams from "./IntroBackground";
 import '../assets/IntroScene.css';
-import baseballHat from '../assets/images/baseball-hat.png';
-import redHat from '../assets/images/red-hat.png';
-import gitHubIcon from '../assets/images/svg/github.svg';
 
 export default function IntroScene() {
   return (
@@ -19,25 +16,7 @@ export default function IntroScene() {
             while our AI extracts knowledge from any document or URL. Experience a stunning, 
             futuristic design that boosts productivity.</p>
         </div>
-        <div className="buttons-container">
-          <div className="button-1">
-            <div className="button-text-left">
-              <p>My GitHub</p>
-              <div className="button-icon-container">
-                <img src={gitHubIcon} alt="icon"/>
-              </div>
-            </div>
-            <div className="button-2">
-              <div className="button-text-right">
-                <p>Message Me</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-
-
-
       <div style={{ width: '100%', height: '100%', position: 'relative' }}>
         <Beams
           beamWidth={2}

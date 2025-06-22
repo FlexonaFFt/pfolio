@@ -1,3 +1,8 @@
+:root {
+    --primary-text-color: var(#fff);
+    --secondary-text-color: var(rgba(255, 255, 255, 0.6));
+}
+
 .intro-scene {
     width: 100%;
     height: 100vh;
@@ -19,35 +24,40 @@
     text-align: center;
     align-items: center;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 
     padding: 0px;
-    gap: 48px;
+    gap: 24px;
 
     transform: translate(-50%, -50%);
     pointer-events: none;
+    opacity: 0;
+    animation: heroContentFadeIn 1s ease-out forwards;
 }
 
 .text-content {
-    font-family: 'Manrope', sans-serif;
+    font-family: var(--main-font);
     position: static;
     align-self: stretch;
-    flex: none;
 
     order: 0;
-    gap: 28px;
+    gap: 20px;
     flex-grow: 0;
-    margin: 48px 0px;
+    margin: 32px 0px;
+    opacity: 0;
+    animation: textContentFadeIn 1s ease-out 0.3s forwards;
 }
 
 .top-text {
     gap: 8px;
     margin: 28px 0px;
+    opacity: 0;
+    animation: topTextFadeIn 1s ease-out 0.6s forwards;
 }
 
 .top-text p.top-text-bottom-text {
     font-size: 55px;
-    font-weight: 450;
+    font-weight: 400;
     line-height: 60px;
     letter-spacing: -1%;
 }
@@ -59,63 +69,18 @@
     letter-spacing: -1.8%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.subtitle {
-    letter-spacing: 3px;
-    margin-bottom: 0.5rem;
-    opacity: 0;
-    animation: fadeIn 0.5s ease forwards;
-    animation-delay: 0.5s;
-    color: rgb(171, 171, 171);
-    font-family: 'Inter Variable', sans-serif;
-    font-size: clamp(1rem, 2vw, 35px);
-    font-weight: 400;
-    line-height: 1.2;
+.text-content p.bottom-text {
+    max-width: 700px;
     text-align: center;
-}
+    margin: 0 auto;
 
-.title {
-    margin-bottom: 2rem;
+    font-size: 16px;
+    font-weight: 250;
+    line-height: 28px;
+    letter-spacing: -1.8%;
+    color: rgba(255, 255, 255, 0.6);
     opacity: 0;
-    animation: fadeIn 0.5s ease forwards;
-    animation-delay: 0.8s;
-    color: #fff;
-    font-family: 'Inter Variable', sans-serif;
-    font-size: clamp(2rem, 5vw, 85px);
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
-}
-
-.baseball-hat {
-    position: absolute;
-    width: 206px;
-    height: 206px;
-    left: 1355px;
-    top: 347px;
-    transform: rotate(11.00deg);
-    display: none;
-}
-
-.red-hat {
-    position: absolute;
-    width: 89px;
-    height: 89px;
-    left: 657px;
-    top: 0px;
-    transform: rotate(-27.00deg);
-    display: none;
+    animation: bottomTextFadeIn 1s ease-out 0.9s forwards;
 }
 
 @media (max-width: 768px) {
@@ -151,12 +116,48 @@
     .spline-scene {
         height: 100vh;
     }
+}
 
-    .title {
-        font-size: 2.5rem;
+@keyframes heroContentFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -45%);
     }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
 
-    .subtitle {
-        font-size: 1rem;
+@keyframes textContentFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes topTextFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bottomTextFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
