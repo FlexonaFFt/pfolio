@@ -30,6 +30,7 @@ export default function DesignSection() {
                     </div>
                 </div>
                 <div className='o-block'></div>
+                {/* Необходимо поменять два последних блока */}
                 <div className='beautiful-images'>
                     <div className='first-image'>
                         <div className='icon'>
@@ -52,16 +53,39 @@ export default function DesignSection() {
                     <div className='third-image'>
                         <div className='icon'>
                             <svg width="359" height="359" viewBox="0 0 359 359" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0_40_83" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-139" y="-56" width="611" height="565">
-                                    <path d="M-80.5796 -42.0247C-111.256 43.2582 -147.152 226.512 -45.3261 276.782C81.8754 339.66 308.895 49.9234 217.268 -20.985C125.561 -91.8934 -74.2355 333.236 136 398.764C254.127 435.624 313.713 258.714 297.492 155.844C298.857 236.47 333.147 415.307 459.304 485.251" stroke="#1D3208" stroke-width="52.2077" />
+                                <g clipPath="url(#clip0_40_78)">
+                                    <mask id="mask0_40_78" className="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="359" height="359">
+                                        <path d="M358.5 0.25H0V358.75H358.5V0.25Z" fill="white" />
+                                    </mask>
+                                    <g mask="url(#mask0_40_78)">
+                                        <mask id="mask1_40_78" className="mask-type:alpha" maskUnits="userSpaceOnUse" x="-139" y="-56" width="611" height="565">
+                                            <path d="M-80.5796 -42.0247C-111.256 43.2582 -147.152 226.512 -45.3261 276.782C81.8754 339.66 308.895 49.9234 217.268 -20.985C125.561 -91.8934 -74.2355 333.236 136 398.764C254.127 435.624 313.713 258.714 297.492 155.844C298.857 236.47 333.147 415.307 459.304 485.251" stroke="#1D3208" strokeWidth="52.2077" />
+                                        </mask>
+                                        <g mask="url(#mask1_40_78)">
+                                            <path d="M-80.5796 -42.0247C-111.256 43.2582 -147.152 226.512 -45.3261 276.782C81.8754 339.66 308.895 49.9234 217.268 -20.985C125.561 -91.8934 -74.2355 333.236 136 398.764C254.127 435.624 313.713 258.714 297.492 155.844C298.857 236.47 333.147 415.307 459.304 485.251" stroke="#1D3208" strokeWidth="52.2077" />
+                                        </g>
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_40_78">
+                                        <rect width="358.5" height="358.5" fill="white" transform="translate(0 0.25)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div className='quad-image'>
+                        <div className='icon'>
+                            <svg width="359" height="359" viewBox="0 0 359 359" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_40_95" className="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="359" height="359">
+                                    <path d="M359 0.25H0.5V358.75H359V0.25Z" fill="white" />
                                 </mask>
-                                <g mask="url(#mask0_40_83)">
-                                    <path d="M-80.5796 -42.0247C-111.256 43.2582 -147.152 226.512 -45.3261 276.782C81.8754 339.66 308.895 49.9234 217.268 -20.985C125.561 -91.8934 -74.2355 333.236 136 398.764C254.127 435.624 313.713 258.714 297.492 155.844C298.857 236.47 333.147 415.307 459.304 485.251" stroke="#1D3208" stroke-width="52.2077" />
+                                <g mask="url(#mask0_40_95)">
+                                    <path d="M36.9946 -17.7366H327.048C358.446 -17.7366 383.997 7.34116 383.997 38.157V180.441C383.997 289.784 293.484 378.619 182.075 378.619C70.6663 378.619 -19.955 289.784 -19.955 180.441V38.157C-19.955 7.34116 5.59657 -17.7366 36.9946 -17.7366Z" fill="#1D3208" />
                                 </g>
                             </svg>
                         </div>
                     </div>
-                    <div className='quad-image'></div>
                 </div>
             </div>
         </div>

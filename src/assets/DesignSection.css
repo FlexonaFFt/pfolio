@@ -122,6 +122,8 @@
     max-height: 300px;
     display: flex;
     gap: 0;
+
+    border-bottom: 1px solid #fff;
 }
 
 .beautiful-images > div {
@@ -184,14 +186,15 @@
 }
 
 .third-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .third-image .icon {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,6 +206,26 @@
     object-fit: contain;
 }
 
+.quad-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.quad-image .icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quad-image .icon svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 .first-image, .second-image, .third-image {
     border-right: 1px solid #fff;
