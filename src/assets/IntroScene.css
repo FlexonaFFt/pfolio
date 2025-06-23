@@ -36,7 +36,7 @@
 }
 
 .text-content {
-    font-family: var(--main-font);
+    font-family: 'Manrope', sans-serif;
     position: static;
     align-self: stretch;
 
