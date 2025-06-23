@@ -1,4 +1,5 @@
 import '../assets/DesignSection.css';
+import '../assets/TextDesignSection.css';
 
 export default function DesignSection() {
     return (
@@ -85,6 +86,42 @@ export default function DesignSection() {
                                 </g>
                             </svg>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className='second-design-section'>
+                <div className='top-section'>
+                    <div className='text-section'>
+                        <p className='text'>At Litebox, it’s our mission to help clients build and 
+                            shape their business. We’re doers and innovators, technology and visual 
+                            lovers. Every day, we design and develop products that make us proud.</p>
+                    </div>
+                    <div className='right-o-section'></div>
+                </div>
+                <div className='bottom-section'>
+                    <div className='first-section'>
+                        <svg className="brand-icon" viewBox="0 0 100 100">
+                            <path d="M 20,80 L 80,80 L 50,20 Z" fill="#FFFFFF"/>
+                        </svg>
+                        <p>Brand<br/>Awareness</p>
+                    </div>
+                    <div className='second-section'>
+                        <svg className="site-icon" viewBox="0 0 100 100">
+                            <rect x="20" y="20" width="60" height="60" rx="15" fill="#FFFFFF"/>
+                        </svg>
+                        <p>Site<br/>Crafting</p>
+                    </div>
+                    <div className='third-section'>
+                        <svg className="business-icon" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="30" fill="#FFFFFF"/>
+                        </svg>
+                        <p>Digital Business<br/>Modelling</p>
+                    </div>
+                    <div className='quad-section'>
+                        <svg className="product-icon" viewBox="0 0 100 100">
+                            <path d="M 20,50 L 50,20 L 80,50 L 50,80 Z" fill="#FFFFFF"/>
+                        </svg>
+                        <p>Product<br/>Building</p>
                     </div>
                 </div>
             </div>
