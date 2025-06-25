@@ -100,28 +100,78 @@ export default function DesignSection() {
                 </div>
                 <div className='bottom-section'>
                     <div className='first-section'>
-                        <svg className="brand-icon" viewBox="0 0 100 100">
-                            <path d="M 20,80 L 80,80 L 50,20 Z" fill="#FFFFFF"/>
+                        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clipPath="url(#clip0_40_529)">
+                                <mask id="mask0_40_529" className="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="77" height="77">
+                                    <path d="M76.5 0H0V76.5H76.5V0Z" fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_40_529)">
+                                    <path d="M52.989 19.2524V56.9414C52.989 61.0214 49.674 64.3364 45.594 64.3364H7.90501C3.82501 64.3364 0.51001 61.0214 0.51001 56.9414C0.51001 32.0534 20.706 11.8574 45.594 11.8574C49.674 11.8574 52.989 15.1724 52.989 19.2524Z" fill="#FFFFFF" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_40_529">
+                                    <rect width="76.5" height="76.5" fill="white" />
+                                </clipPath>
+                            </defs>
                         </svg>
                         <p>Brand<br/>Awareness</p>
                     </div>
                     <div className='second-section'>
-                        <svg className="site-icon" viewBox="0 0 100 100">
-                            <rect x="20" y="20" width="60" height="60" rx="15" fill="#FFFFFF"/>
+                        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_40_562)">
+                                <mask id="mask0_40_562" className="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="77" height="77">
+                                    <path d="M77 0H0.5V76.5H77V0Z" fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_40_562)">
+                                    <path d="M26.7482 24.9365C26.7482 17.617 20.8128 11.6816 13.4698 11.6816C6.15031 11.6816 0.191467 17.617 0.191467 24.9365V51.4463C0.191467 58.7659 6.12685 64.7012 13.4698 64.7012C20.7893 64.7012 26.7482 58.7659 26.7482 51.4463V24.9365Z" fill="#FFFFFF" />
+                                    <path d="M53.2682 24.9365C53.2682 17.617 47.3328 11.6816 39.9898 11.6816C32.6703 11.6816 26.7115 17.617 26.7115 24.9365V51.4463C26.7115 58.7659 32.6469 64.7012 39.9898 64.7012C47.3094 64.7012 53.2682 58.7659 53.2682 51.4463V24.9365Z" fill="#FFFFFF" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_40_562">
+                                    <rect width="76.5" height="76.5" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
                         </svg>
-                        <p>Site<br/>Crafting</p>
+                        <p className="white-text">Site<br/>Crafting</p>
                     </div>
                     <div className='third-section'>
-                        <svg className="business-icon" viewBox="0 0 100 100">
-                            <circle cx="50" cy="50" r="30" fill="#FFFFFF"/>
+                        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_40_602)">
+                                <mask id="mask0_40_602" className="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="77" height="77">
+                                    <path d="M76.5 0H0V76.5H76.5V0Z" fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_40_602)">
+                                    <path d="M4.71138 16.3455C10.7294 10.3275 20.4194 10.3275 26.4374 16.3455C32.4554 10.3275 42.1454 10.3275 48.1634 16.3455C54.1814 22.3635 54.1814 32.0535 48.1634 38.0715C54.1814 44.0895 54.1814 53.7795 48.1634 59.7975C42.1454 65.8155 32.4554 65.8155 26.4374 59.7975C20.4194 65.8155 10.7294 65.8155 4.71138 59.7975C-1.30662 53.7795 -1.30662 44.0895 4.71138 38.0715C-1.25562 32.1045 -1.25562 22.3635 4.71138 16.3455Z" fill="#FFFFFF" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_40_602">
+                                    <rect width="76.5" height="76.5" fill="white" />
+                                </clipPath>
+                            </defs>
                         </svg>
-                        <p>Digital Business<br/>Modelling</p>
+                        <p className="white-text">Digital Business<br/>Modelling</p>
                     </div>
                     <div className='quad-section'>
-                        <svg className="product-icon" viewBox="0 0 100 100">
-                            <path d="M 20,50 L 50,20 L 80,50 L 50,80 Z" fill="#FFFFFF"/>
+                        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_40_635)">
+                                <mask id="mask0_40_635" className="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="77" height="77">
+                                    <path d="M77 0H0.5V76.5H77V0Z" fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_40_635)">
+                                    <path d="M0.882446 60.8909C0.882446 62.8004 2.55474 64.2661 4.43154 64.0096C17.2402 62.2628 27.1148 51.1968 27.1148 37.8058C27.1148 24.4152 17.2402 13.3497 4.43154 11.603C2.55474 11.3475 0.882446 12.8122 0.882446 14.7211V60.8909Z" fill="#FFFFFF" />
+                                    <path d="M26.6375 60.8909C26.6375 62.8004 28.3097 64.2661 30.1865 64.0096C42.9952 62.2628 52.8698 51.1968 52.8698 37.8058C52.8698 24.4152 42.9952 13.3497 30.1865 11.603C28.3097 11.3475 26.6375 12.8122 26.6375 14.7211V60.8909Z" fill="#FFFFFF" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_40_635">
+                                    <rect width="76.5" height="76.5" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
                         </svg>
-                        <p>Product<br/>Building</p>
+                        <p className="white-text">Product<br/>Building</p>
                     </div>
                 </div>
             </div>
