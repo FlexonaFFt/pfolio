@@ -61,15 +61,9 @@
     animation: bottomTextFadeIn 1s ease-out 0.9s forwards;
 }
 
-.text-section p.link-text {
-    font-size: 12px;
-    font-weight: 250;
-    line-height: 28px;
-    letter-spacing: -1.8%;
-    color: rgba(255, 255, 255, 0.8);
-    opacity: 0;
-    animation: bottomTextFadeIn 1s ease-out 0.9s forwards; 
+.text-section .link-text {
     cursor: pointer;
+    font-family: 'Manrope', sans-serif;
 }
 
 .text-section p.last-child {
