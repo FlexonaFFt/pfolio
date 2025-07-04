@@ -1,7 +1,8 @@
-import React from 'react';
 import ShinyText from './assets/ShinyText.jsx';
 import SpotlightCard from './assets/SpotlightCard.jsx';
+
 import '../assets/InfoScene.css';
+import ProfileImage from '../assets/images/photo-max.jpeg';
 
 export default function InfoScene() {
   return (
@@ -21,7 +22,7 @@ export default function InfoScene() {
             </div>
         </SpotlightCard>
         <div className='right-block'>
-
+            <img src={ProfileImage} alt="Profile" className="right-block-image" />
         </div>
     </div>
   );
