@@ -4,6 +4,7 @@ import './main.css';
 
 import IntroScene from './components/IntroScene.jsx';
 import InfoScene from './components/InfoScene.jsx';
+import StackScene from './components/StackScene.jsx';
 
 const Portfolio = () => {
   return (
@@ -13,6 +14,9 @@ const Portfolio = () => {
       </section>
       <section className="scroll-section">
         <InfoScene />
+      </section>
+      <section className="scroll-section">
+        <StackScene />
       </section>
     </div>
   );
