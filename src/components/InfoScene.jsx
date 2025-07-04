@@ -1,11 +1,12 @@
 import React from 'react';
 import ShinyText from './assets/ShinyText.jsx';
+import SpotlightCard from './assets/SpotlightCard.jsx';
 import '../assets/InfoScene.css';
 
 export default function InfoScene() {
   return (
     <div className='info-scene'>
-        <div className='left-block'>
+        <SpotlightCard className="left-block" spotlightColor="rgba(0, 229, 255, 0.2)">
             <div className='text-section'>
                 <p>Find Inspiration.<br/>Create, Generate,<br/>Produce&Automate</p>
                 <p className="bottom-text">Welcome to PromptVerse. Effortlessly create content, explore endless prompts, 
@@ -18,7 +19,7 @@ export default function InfoScene() {
                     futuristic design that boosts productivity.</p>
                 <ShinyText text="Show more about me →" disabled={false} speed={3} className='link-text' />
             </div>
-        </div>
+        </SpotlightCard>
         <div className='right-block'>
 
         </div>
