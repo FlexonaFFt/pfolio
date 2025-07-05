@@ -1,18 +1,20 @@
 .stack-block {
-    min-height: calc(100vh - 40px);
+    height: calc(100vh - 40px);
     margin: 20px 20px 20px 20px;
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
-    overflow: hidden; /* Чтобы внутренние блоки не выходили за пределы скругленных углов */
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
 }
 
 .content-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    width: 100%;
 }
 
 .content-section {
@@ -21,20 +23,21 @@
     justify-content: space-between;
     padding: 40px;
     color: #FFF;
-    min-height: 33.33vh; /* Каждая секция занимает примерно треть высоты */
+    height: calc(100vh - 40px);
+    min-height: calc(100vh - 40px);
+    scroll-snap-align: start;
 }
 
-/* Стили для разных секций */
 .design-section {
-    background-color: #1E1E1E; /* Темный фон для Design */
+    background-color: #1E1E1E; 
 }
 
 .code-section {
-    background-color: #4CAF50; /* Зеленый фон для Code */
+    background-color: #4CAF50; 
 }
 
 .synergy-section {
-    background-color: #2E2E2E; /* Темно-зеленый фон для Synergy */
+    background-color: #2E2E2E; 
 }
 
 .left-text, .right-text {

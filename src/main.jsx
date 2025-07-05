@@ -15,7 +15,7 @@ const Portfolio = () => {
       <section className="scroll-section">
         <InfoScene />
       </section>
-      <section className="scroll-section">
+      <section className="scroll-section stack-scene-container">
         <StackScene />
       </section>
     </div>

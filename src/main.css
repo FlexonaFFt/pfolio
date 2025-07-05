@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 html {
@@ -29,4 +30,8 @@ body {
   scroll-snap-align: start;
   position: relative;
   overflow: hidden;
+}
+
+.stack-scene-container {
+  overflow: visible; 
 }
