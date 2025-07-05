@@ -1,3 +1,4 @@
+import ShinyText from './assets/ShinyText.jsx';
 import '../assets/StackScene.css';
 
 export default function StackScene() {
@@ -6,8 +7,8 @@ export default function StackScene() {
             <div className='content-container'>
                 <div className='content-section design-section'>
                     <div className='left-text'>
-                        <p className='pointer'>01</p>
-                        <p className='point-text'>Design</p>
+                        <ShinyText text="01" disabled={false} speed={3} className='pointer' />
+                        <ShinyText text="Design" disabled={false} speed={3} className='point-text' />
                     </div>
                     <div className='right-text'>
                         <p className='text-line'>We deeply care about our work.</p>
@@ -20,8 +21,8 @@ export default function StackScene() {
                 
                 <div className='content-section code-section'>
                     <div className='left-text'>
-                        <p className='pointer'>02</p>
-                        <p className='point-text'>Code</p>
+                        <ShinyText text="02" disabled={false} speed={3} className='pointer' />
+                        <ShinyText text="Code Stack" disabled={false} speed={3} className='point-text' />
                     </div>
                     <div className='right-text'>
                         <p className='text-line'>Our team of doers and innovators</p>
@@ -33,8 +34,8 @@ export default function StackScene() {
                 
                 <div className='content-section synergy-section'>
                     <div className='left-text'>
-                        <p className='pointer'>03</p>
-                        <p className='point-text'>Synergy</p>
+                        <ShinyText text="03" disabled={false} speed={3} className='pointer' />
+                        <ShinyText text="Synergy" disabled={false} speed={3} className='point-text' />
                     </div>
                     <div className='right-text'>
                         <p className='text-line'>Our code - both literally and figuratively -</p>

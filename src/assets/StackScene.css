@@ -1,5 +1,5 @@
 .stack-block {
-    height: calc(100vh - 40px);
+    height: calc(100vh - 20px);
     margin: 20px 20px 20px 20px;
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
@@ -22,8 +22,8 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 40px;
-    color: #FFF;
-    height: calc(100vh - 40px);
+    color: rgba(255, 255, 255, 0.6);
+    height: calc(100vh - 20px);
     min-height: calc(100vh - 40px);
     scroll-snap-align: start;
 }
@@ -33,7 +33,7 @@
 }
 
 .code-section {
-    background-color: #4CAF50; 
+    background-color: rgba(0, 48, 73, 0.6); 
 }
 
 .synergy-section {
@@ -71,6 +71,6 @@
     font-size: 18px;
     font-weight: 200;
     width: 65%;
-    margin-left: auto; /* Выравнивание текста справа */
+    margin-left: auto; 
     margin-bottom: 2px;
 }
