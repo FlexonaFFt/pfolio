@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,9 +14,24 @@ body {
   background: #000;
   color: white;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .portfolio {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-section {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+}
+
+.stack-scene-container {
+  overflow: visible; 
 }

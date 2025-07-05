@@ -1,5 +1,5 @@
 /* import Dither from "./IntroBackground"; */
-import Beams from "./IntroBackground";
+import Beams from "./assets/IntroBackground";
 import '../assets/IntroScene.css';
 
 export default function IntroScene() {
