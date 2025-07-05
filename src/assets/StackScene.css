@@ -67,7 +67,7 @@
     justify-content: center;
 }
 
-.right-text p.text-line {
+.right-text .text-line {
     font-size: 18px;
     font-weight: 200;
     width: 65%;

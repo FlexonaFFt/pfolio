@@ -1,4 +1,5 @@
 import ShinyText from './assets/ShinyText.jsx';
+import ScrambleText from './assets/ScrambleText.jsx';
 import '../assets/StackScene.css';
 
 export default function StackScene() {
@@ -11,6 +12,7 @@ export default function StackScene() {
                         <ShinyText text="Design" disabled={false} speed={3} className='point-text' />
                     </div>
                     <div className='right-text'>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="We deeply care about our work."></ScrambleText>
                         <p className='text-line'>We deeply care about our work.</p>
                         <p className='text-line'>We uphold high standards to ensure</p>
                         <p className='text-line'>each project reflects our commitment</p>
