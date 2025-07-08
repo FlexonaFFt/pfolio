@@ -2,7 +2,7 @@ import ShinyText from './assets/ShinyText.jsx';
 import SpotlightCard from './assets/SpotlightCard.jsx';
 
 import '../assets/InfoScene.css';
-import ProfileImage from '../assets/images/photo-max.jpeg';
+import ProfileImage from '../assets/images/my-image.png';
 
 export default function InfoScene() {
   return (
