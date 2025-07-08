@@ -70,7 +70,8 @@
 .right-text .text-line {
     font-size: 18px;
     font-weight: 200;
-    width: 65%;
-    margin-left: auto; 
+    width: 100%;
+    margin-left: 0;
+    margin-right: auto; 
     margin-bottom: 2px;
 }

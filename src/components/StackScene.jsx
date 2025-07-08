@@ -13,11 +13,10 @@ export default function StackScene() {
                     </div>
                     <div className='right-text'>
                         <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="We deeply care about our work."></ScrambleText>
-                        <p className='text-line'>We deeply care about our work.</p>
-                        <p className='text-line'>We uphold high standards to ensure</p>
-                        <p className='text-line'>each project reflects our commitment</p>
-                        <p className='text-line'>to excellence and client success,</p>
-                        <p className='text-line'>a source of immense pride for us.</p>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="We uplhold high standarts to ensure"></ScrambleText>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="each project reflects our commitment"></ScrambleText>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="to excellence and clinet success,"></ScrambleText>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="a source of immense preid for us."></ScrambleText>
                     </div>
                 </div>
                 
@@ -27,10 +26,10 @@ export default function StackScene() {
                         <ShinyText text="Code Stack" disabled={false} speed={3} className='point-text' />
                     </div>
                     <div className='right-text'>
-                        <p className='text-line'>Our team of doers and innovators</p>
-                        <p className='text-line'>harnesses leading-edge technology</p>
-                        <p className='text-line'>to create products designed to</p>
-                        <p className='text-line'>achieve your goals.</p>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="Our team of doers and innovators"></ScrambleText>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="harnesses leading-edge technology"></ScrambleText>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="to create products designed to"></ScrambleText>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="achive your goals."></ScrambleText>
                     </div>
                 </div>
                 
@@ -40,10 +39,10 @@ export default function StackScene() {
                         <ShinyText text="Synergy" disabled={false} speed={3} className='point-text' />
                     </div>
                     <div className='right-text'>
-                        <p className='text-line'>Our code - both literally and figuratively -</p>
-                        <p className='text-line'>is collaboration. Fine-tuning each small</p>
-                        <p className='text-line'>detail until we can take a step back</p>
-                        <p className='text-line'>and marvel at the whole picture, together.</p>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="Our code - both literally and figuratively -"></ScrambleText>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="is collaboration. Fine-tuning each small"></ScrambleText>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="detail until we can take a step back"></ScrambleText>
+                        <ScrambleText className="text-line" speed={20} useOriginalCharsOnly={true} sequential={true} text="and marvel at the whole picture, together."></ScrambleText>
                     </div>
                 </div>
             </div>
