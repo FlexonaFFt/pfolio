@@ -75,3 +75,9 @@
     margin-right: auto; 
     margin-bottom: 2px;
 }
+
+.right-text .linked-text {
+    margin-top: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
