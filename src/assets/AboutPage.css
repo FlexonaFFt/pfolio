@@ -1,0 +1,148 @@
+.body-container { 
+    padding: 20px 30px 10px;
+    font-family: 'Manrope', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.header { 
+    position: relative;
+    flex-shrink: 0;
+}
+
+.navigator-line {
+    overflow: visible;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-color: #383838;
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.text-block, .email-block {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.text-block .navigator-line,
+.email-block .navigator-line,
+.phone-block .navigator-line,
+.git-block .navigator-line,
+.leet-block .navigator-line {
+    top: 0;
+}
+
+.top-text-about-me {
+    margin-top: 10px;
+    height: 160px;
+    width: 100%;
+    position: relative;
+}
+
+.my-email {
+    margin-top: 10px;
+    position: relative;
+}
+
+.head-line {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 0px 0px 160px;
+}
+
+.left-text-block {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-shrink: 0;
+    padding: 0;
+    width: 373px;
+}
+
+.name-text {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.left-text-block .bottom-text {
+    color: #AbAbAb;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.right-about-text {
+    font-size: 32px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* стили для секции main */
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: flex-start;
+
+    gap: 20px;
+    position: relative;
+    border-radius: inherit;
+    padding: 0px;
+
+    color: #fff;
+    font-weight: 200;
+}
+
+.left-fixed-block {
+    position: sticky;
+    flex: 1 0 0;
+
+    max-width: 368px;
+    top: 0px;
+}
+
+.left-fixed-block .inner-block {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 10px;
+
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+p.top-text-about-me {
+    margin-top: 30px;
+    height: 160px;
+    width: 100%;
+}
+
+.email-block {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+
+.right-content-block {
+    position: relative;
+    flex: 1 0 0;
+}
+

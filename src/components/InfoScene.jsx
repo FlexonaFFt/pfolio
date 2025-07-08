@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import ShinyText from './assets/ShinyText.jsx';
 import SpotlightCard from './assets/SpotlightCard.jsx';
 
@@ -18,7 +19,9 @@ export default function InfoScene() {
                     and stay ahead with real-time trends. Automate emails, social media, and more 
                     while our AI extracts knowledge from any document or URL. Experience a stunning, 
                     futuristic design that boosts productivity.</p>
-                <ShinyText text="Show more about me →" disabled={false} speed={3} className='link-text' />
+                <Link to="/aboutme">
+                  <ShinyText text="Show more about me →" disabled={false} speed={3} className='link-text' />
+                </Link>
             </div>
         </SpotlightCard>
         <div className='right-block'>
