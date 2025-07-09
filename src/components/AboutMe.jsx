@@ -14,11 +14,13 @@ const AboutMe = () => {
         </div>
       </div>
 
+
+
       <div className='main-section'>
         <div className='left-fixed-block'>
           <div className='inner-block'>
             <div className='text-block'>
-              <div className='navigator-line'></div>
+              <div className='navigator-line top-line'></div>
               <p className='top-text-about-me'>A seasoned Senior Producer with 10+ years of experience, 
               I excel in leading complex marketing and design projects from concept to completion.</p>
             </div>
@@ -40,8 +42,29 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className='right-content-block'>
 
+
+
+        <div className='right-content-block'>
+          <div className='long-block'>
+            <div className='sections'>
+              <div className='own-experience-section'>
+                <div className='navigator-line top-line'></div>
+                <div className='own-settings'>
+                  <div className='content-container'>
+                    <p className='head-p'>Experience</p>
+                  </div>
+                  <div className='vacancies'>
+                    <div className='vacancy-one'>
+                      <div className='navigator-line'></div>
+                      <div className='top-section'></div>
+                      <div className='bottom-section'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
