@@ -31,8 +31,7 @@ export default function IntroScene() {
       </div>
 
       {/*
-      <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-        <Dither
+      <div style={{ width: '100%', height: '100%', position: 'relative' }}> <Dither
           waveColor={[0.5, 0.5, 0.5]}
           disableAnimation={false}
           enableMouseInteraction={true}
