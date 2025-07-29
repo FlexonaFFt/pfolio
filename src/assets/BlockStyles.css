@@ -24,6 +24,10 @@ body {
 }
 
 .left-block {
+  padding: 0;
+}
+
+.left-block {
   background: #333;
 }
 

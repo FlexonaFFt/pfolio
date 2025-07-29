@@ -1,6 +1,8 @@
 import React from "react";
 import "../../assets/BlockStyles.css";
 import "../../assets/pages/ProjectsTabStyle.css";
+import LeftImage from "../../assets/images/Art.jpg";
+import NavigationBar from "../assets/NavigationBar.jsx";
 
 const projects = [
   {
@@ -39,12 +41,17 @@ export default function App() {
   return (
     <div className="main-container">
       <div className="left-block">
-        Левый блок
+        <img
+          src={ LeftImage }
+          alt="Описание изображения"
+          className="left-block-img"
+        />
       </div>
       <div className="right-block projects-block">
+        <NavigationBar />
         <h2 className="projects-title">Projects</h2>
         <p className="projects-desc">
-          Here’s a collection of the work I’ve had the privilege to bring to life. Each project tells a unique story, crafted with creativity and attention to detail.
+          Here’s a collection of the work I’ve had the privilege to bring to life. Each project tells a unique story, crafted with creativity and attention to detail. Here’s a collection of the work I’ve had the privilege to bring to life. Each project tells a unique story, crafted with creativity and attention to detail.
         </p>
         <ul className="projects-list">
           {projects.map((project) => (
