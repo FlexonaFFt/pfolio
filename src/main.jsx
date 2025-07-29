@@ -8,8 +8,12 @@ import ResumeScene from './components/ResumeScene.jsx';
 const Portfolio = () => {
   return (
     <div className='portfolio'>
-      <IntroScene />
-      <ResumeScene />
+      <section className='scroll-section'>
+        <IntroScene />
+      </section>
+      <section className='scroll-section'>
+        <ResumeScene />
+      </section>
     </div>
   );
 }
