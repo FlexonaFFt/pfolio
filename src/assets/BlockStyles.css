@@ -34,3 +34,32 @@ body {
 .right-block {
   background: #444;
 }
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+
+  .left-block, .right-block {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+  }
+
+  .left-block-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 599px) {
+  .main-container {
+    display: none;
+  }
+}
