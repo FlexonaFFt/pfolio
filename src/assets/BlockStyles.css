@@ -10,7 +10,7 @@ body {
   flex-direction: row;
   gap: 15px;
   padding: 15px;
-  height: calc(100vh);
+  height: 100vh;
   box-sizing: border-box;
 }
 
@@ -25,9 +25,6 @@ body {
 
 .left-block {
   padding: 0;
-}
-
-.left-block {
   background: #333;
 }
 
@@ -35,7 +32,7 @@ body {
   background: #444;
 }
 
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1024px) and (min-width: 600px) {
   .main-container {
     flex-direction: column;
     height: auto;

@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/BlockStyles.css";
 import "../../assets/pages/ProjectsTabStyle.css";
-import LeftImage from "../../assets/images/Art.jpg";
+import LeftSlider from "../assets/SliderComponent.jsx";
 import NavigationBar from "../assets/NavigationBar.jsx";
 
 const projects = [
@@ -41,11 +41,7 @@ export default function App() {
   return (
     <div className="main-container">
       <div className="left-block">
-        <img
-          src={ LeftImage }
-          alt="Описание изображения"
-          className="left-block-img"
-        />
+        <LeftSlider />
       </div>
       <div className="right-block projects-block">
         <NavigationBar />
