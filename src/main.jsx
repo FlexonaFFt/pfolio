@@ -8,7 +8,6 @@ import AboutScene from './components/AboutScene.jsx';
 const Portfolio = () => {
   return (
     <div className='portfolio'>
-      <IntroScene />
       <AboutScene />
     </div>
   );
