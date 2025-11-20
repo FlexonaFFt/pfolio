@@ -1,1 +1,23 @@
-/* Global entry styles live in component-level files (e.g., styles/Intro.css). */
+.page-shell {
+  position: relative;
+  background: #050505;
+  min-height: 100vh;
+}
+
+.bg-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-stripes {
+  background-size: calc(100% / 7) 100%;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.16) 2px,
+    rgba(255, 255, 255, 0) 2px
+  );
+  opacity: 0.45;
+}

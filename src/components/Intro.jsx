@@ -46,7 +46,7 @@ function Intro() {
       ref={introRef}
       style={{ '--offset-x': `${offset.x}px`, '--offset-y': `${offset.y}px` }}
     >
-      <div className="intro__layer intro__stripes" aria-hidden="true" />
+      <div className="intro__layer intro__bottom-glow" aria-hidden="true" />
 
       <header className="intro__header">
         <nav className="intro__nav">
